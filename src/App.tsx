@@ -1,15 +1,3 @@
-import React from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
-  User,
-  Briefcase,
-  Code,
-  MessageSquare,
-} from "lucide-react";
-
 function App() {
   return (
     <div className='min-h-screen bg-gray-50'>
@@ -25,30 +13,24 @@ function App() {
         <div className='container mx-auto px-6 relative z-10'>
           <div className='text-center'>
             <h1 className='text-5xl md:text-7xl font-bold text-gray-900 mb-4'>
-              VID XD
+              VID XDDDD
             </h1>
-            <p className='text-xl md:text-2xl text-gray-600 mb-8'>
+            <p className='text-xl md:text-2xl nov-class mb-8'>
               Full Stack Developer & UI/UX Enthusiast
             </p>
             <div className='flex justify-center space-x-4'>
               <a
                 href='#'
                 className='p-2 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition-colors'
-              >
-                <Github size={24} />
-              </a>
+              ></a>
               <a
                 href='#'
                 className='p-2 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition-colors'
-              >
-                <Linkedin size={24} />
-              </a>
+              ></a>
               <a
                 href='#'
                 className='p-2 bg-gray-900 text-white rounded-full hover:bg-gray-700 transition-colors'
-              >
-                <Mail size={24} />
-              </a>
+              ></a>
             </div>
           </div>
         </div>
@@ -65,28 +47,42 @@ function App() {
                 className='rounded-lg shadow-xl w-full max-w-md mx-auto'
               />
             </div>
-            <div className='w-full md:w-1/2'>
-              <h2 className='text-3xl font-bold mb-6 flex items-center gap-2'>
-                <User className='text-blue-600' />
-                About Me
-              </h2>
-              <p className='text-gray-600 mb-6'>
-                I'm a passionate full-stack developer with 5 years of experience
-                building web applications. I specialize in React, Node.js, and
-                modern web technologies. When I'm not coding, you can find me
-                contributing to open-source projects or writing technical blog
-                posts.
-              </p>
-              <div className='grid grid-cols-2 gap-4'>
-                <div className='p-4 bg-gray-50 rounded-lg'>
-                  <h3 className='font-semibold mb-2'>Frontend</h3>
-                  <p className='text-gray-600'>
-                    React, TypeScript, Tailwind CSS
-                  </p>
-                </div>
-                <div className='p-4 bg-gray-50 rounded-lg'>
-                  <h3 className='font-semibold mb-2'>Backend</h3>
-                  <p className='text-gray-600'>Node.js, Express, PostgreSQL</p>
+            <div className='w-full md:w-1/2 p-6 bg-gradient-to-br from-purple-100 to-pink-100 rounded-xl shadow-lg'>
+              <div>
+                <h3 className='text-4xl mb-6 flex items-center font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text'>
+                  Developer Profile
+                </h3>
+
+                <p className='text-gray-700 mb-8 leading-relaxed'>
+                  I'm a passionate full-stack developer with 5 years of
+                  experience building web applications. I specialize in React,
+                  Node.js, and modern web technologies. When I'm not coding, you
+                  can find me contributing to open-source projects or writing
+                  technical blog posts.
+                </p>
+
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                  <div className='p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-200'>
+                    <div className='flex items-center mb-4'>
+                      <h3 className='font-bold text-lg text-purple-600'>
+                        Frontend
+                      </h3>
+                    </div>
+                    <p className='text-gray-600'>
+                      React, TypeScript, Tailwind CSS
+                    </p>
+                  </div>
+
+                  <div className='p-6 bg-white rounded-xl shadow-md transform hover:scale-105 transition-transform duration-200'>
+                    <div className='flex items-center mb-4'>
+                      <h3 className='font-bold text-lg text-pink-600'>
+                        Backend
+                      </h3>
+                    </div>
+                    <p className='text-gray-600'>
+                      Node.js, Express, PostgreSQL
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,7 +94,6 @@ function App() {
       <section id='projects' className='py-20 bg-gray-50'>
         <div className='container mx-auto px-6'>
           <h2 className='text-3xl font-bold mb-12 text-center flex items-center justify-center gap-2'>
-            <Code className='text-blue-600' />
             Featured Projects
           </h2>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
@@ -127,9 +122,10 @@ function App() {
                         Node.js
                       </span>
                     </div>
-                    <a href='#' className='text-blue-600 hover:text-blue-800'>
-                      <ExternalLink size={20} />
-                    </a>
+                    <a
+                      href='#'
+                      className='text-blue-600 hover:text-blue-800'
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -142,7 +138,6 @@ function App() {
       <section id='contact' className='py-20 bg-white'>
         <div className='container mx-auto px-6'>
           <h2 className='text-3xl font-bold mb-12 text-center flex items-center justify-center gap-2'>
-            <MessageSquare className='text-blue-600' />
             Get In Touch
           </h2>
           <div className='max-w-2xl mx-auto'>
